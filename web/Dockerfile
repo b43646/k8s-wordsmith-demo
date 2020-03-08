@@ -7,7 +7,7 @@ RUN go build dispatcher.go
 # RUN
 FROM alpine:edge
 
-EXPOSE 80
+EXPOSE 8000
 CMD ["/dispatcher"]
 
 COPY --from=builder /go/dispatcher /
