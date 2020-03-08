@@ -17,8 +17,8 @@ func main() {
 	http.Handle("/words/", http.StripPrefix("/words", fwd))
 	http.Handle("/", http.FileServer(http.Dir("static")))
 
-	fmt.Println("Listening on port 80")
-	http.ListenAndServe(":80", nil)
+	fmt.Println("Listening on port 8000")
+	http.ListenAndServe(":8000", nil)
 }
 
 type forwarder struct {
