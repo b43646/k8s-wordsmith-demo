@@ -14,13 +14,13 @@ INSERT INTO nouns(word) VALUES
   ('gøpher'),
   ('møby døck'),
   ('server'),
-  ('bicycle'),
+  ('openshift'),
   ('viking'),
-  ('mermaid'),
+  ('istiø'),
   ('fjørd'),
   ('legø'),
   ('flødebolle'),
-  ('smørrebrød');
+  ('redhat');
 
 INSERT INTO verbs(word) VALUES
   ('will drink'),
@@ -42,7 +42,7 @@ INSERT INTO adjectives(word) VALUES
   ('the røtten'),
   ('a red'),
   ('the serverless'),
-  ('a brøken'),
+  ('a good'),
   ('a shiny'),
   ('the pretty'),
   ('the impressive'),
