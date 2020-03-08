@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: db
-        image: dockersamples/k8s-wordsmith-db
+        image: quay.io/loren123/db:latest
         ports:
         - containerPort: 5432
           name: db
@@ -62,7 +62,7 @@ spec:
     spec:
       containers:
       - name: words
-        image: dockersamples/k8s-wordsmith-api
+        image: quay.io/loren123/api:latest
         ports:
         - containerPort: 8080
           name: api
@@ -76,7 +76,7 @@ metadata:
 spec:
   ports:
     - port: 8081
-      targetPort: 80
+      targetPort: 8000
       name: web
   selector:
     app: words-web
@@ -96,7 +96,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: dockersamples/k8s-wordsmith-web
+        image: quay.io/loren123/web:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8000
           name: words-web
